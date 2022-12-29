@@ -1,0 +1,20 @@
+{
+  "name": "streak-counter",
+  "version": "1.0.0",
+  "description": "This is a basic streak counter - inspired by DuoLingo - written in TypeScript and meant for the browswer (uses `localStorage`).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queuebit/streak-counter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queuebit/streak-counter/issues"
+  },
+  "homepage": "https://github.com/queuebit/streak-counter#readme"
+}
