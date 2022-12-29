@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/queuebit/streak-counter/issues"
   },
-  "homepage": "https://github.com/queuebit/streak-counter#readme"
+  "homepage": "https://github.com/queuebit/streak-counter#readme",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
