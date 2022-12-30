@@ -1,5 +1,6 @@
 import { JSDOM } from "jsdom";
 import { streakCounter } from "../src/index";
+import { formattedDate } from "../src/utils";
 
 describe("basic test", () => {
   it("should pass", () => {
@@ -28,13 +29,6 @@ describe("streakCounter", () => {
   it("should return a streak starting at 1 and keep track of lastLoginDate", () => {
     const date = new Date();
     const streak = streakCounter(mockLocalStorage, date);
-
-    function formattedDate(date: Date): string {
-      // returns date as 11/11/2021
-      // other times it returns 11/11/2021, 12:00:00 AM
-      // which is why we call the .split at the end
-      return date.toLocaleDateString("en-US");
-    }
 
     const dateFormatted = formattedDate(date);
     expect(streak.currentCount).toBe(1);
