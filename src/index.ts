@@ -1,12 +1,10 @@
-import { buildStreak, formattedDate, KEY, Streak, updateStreak } from "./utils";
-
-export function differenceInDays(dateLeft: Date, dateRight: Date): number {
-  const MILLISEC_IN_DAY = 1000 * 60 * 60 * 24;
-  const difftime = Math.abs(dateLeft.getTime() - dateRight.getTime());
-  const differenceInDays = Math.ceil(difftime / MILLISEC_IN_DAY);
-
-  return differenceInDays;
-}
+import {
+  buildStreak,
+  differenceInDays,
+  KEY,
+  Streak,
+  updateStreak,
+} from "./utils";
 
 function shouldIncrementOrResetStreakCount(
   currentDate: Date,

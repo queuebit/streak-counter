@@ -23,6 +23,14 @@ export function buildStreak(
   };
 }
 
+export function differenceInDays(dateLeft: Date, dateRight: Date): number {
+  const MILLISEC_IN_DAY = 1000 * 60 * 60 * 24;
+  const difftime = Math.abs(dateLeft.getTime() - dateRight.getTime());
+  const differenceInDays = Math.ceil(difftime / MILLISEC_IN_DAY);
+
+  return differenceInDays;
+}
+
 export function formattedDate(date: Date): string {
   // returns date as 11/11/2021
   // other times it returns 11/11/2021, 12:00:00 AM
